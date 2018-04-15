@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display Flex : 15/04</title>
+</head>
+	<style type="text/css">
+	
+		
+		#container{
+		display:inline-flex /*Os flex-itens ficam em inline*/;
+		/*flex-wrap: wrap; Quebra a linha de flex-itens quando chegar ao fim do containner*/
+		/*flex-direction: column; /*Direção de escrita. Tanto de linha como de coluna flex-direction: row | row-reverse | column | column-reverse e também faz o Wrap*/
+		flex-flow:  row-reverse nowrap /*Trabalha com a direção de x(main) e Y(axes)*/;
+		width:980px; 
+		background-color: #FFC600;
+		margin:auto; 
+		justify-content: center /*Alinhamento dos itens dentro do container Flex*/;
+		align-items:center/*Alinhamento Vertical*/;
+		min-height: 500px;
+		}
+	
+		.itens{
+		background-color: #560D0F; 
+		color:#ffffff; 
+		margin: 10px;
+		width:37%;
+		font-size:2rem;
+        text-align: center;
+		color:#FFC600;
+		}
+		
+	</style>
+
+<body>
+	<h1>Display Flex</h1>
+
+<p>
+<strong>display:inline-flex:</strong> Os flex-itens ficam em inline;<br>
+<strong>flex-wrap: wrap;</strong> Quebra a linha de flex-itens quando chegar ao fim do containner<br>
+<strong>flex-direction: column; </strong> Direção de escrita. <br>
+Tanto de linha como de coluna flex-direction: row | row-reverse | column | column-reverse e também faz o Wrap<br>
+<strong>flex-flow:  row-reverse nowrap</strong>Trabalha com a direção de x(main) e Y(cross)<br>
+<strong>justify-content:</strong> Alinhamento dos flex-itens dentro do container horizontalmente(ou Main axis). Ex flex-start | flex-end | center | space-between | space-around<br>
+<strong>align-items:</strong> Alinhamento dos flex-itens dentro do container verticalmente(ou Cross axis). Ex flex-start | flex-end | center | baseline | stretch
+
+</p>
+
+<div id="container">
+	<div class="itens">Item 1</div>
+	<div class="itens">Item 2</div>
+ 	<div class="itens">item 3</div>
+ 	<div class="itens">item 4</div>
+</div>
+</body>
+</html>
