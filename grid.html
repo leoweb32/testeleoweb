@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout css -16/04</title>
+<style type="text/css">
+    
+    strong{ margin-top: 30px;}    
+    
+#grid_container{
+display:grid; 
+background-color:#FFC500;
+width:100%;
+grid-template-columns: 22% 22% 22% 22%;
+grid-template-rows: 50px 100px 150px;
+grid-column-gap: 25px;
+grid-row-gap: 40px;
+
+}
+
+.grid-item {
+border-radius:10px; 
+background-color: #550406; 
+color:#ffffff;
+padding: 20px;
+text-align: center;
+}   
+    
+    
+
+    
+    
+</style>    
+</head>
+
+    
+<body>
+    
+<p><h1>Grid Layout css</h1>
+    <strong>display: grid ou display: inline-grid:</strong> Já faz com que todos itens dentro do Container se tornem partes de Grid e se tornem Grid-item. <br>
+inline-grid e grid são propriedade que dizem se vai haver ao lado do container um outro bloco alinhado verticalmente ou horizontalmente.<br>
+    <hr>
+    <strong>grid-template-columns:</strong>Neste itens iremos colocar quantas colunas teremos e quais as suas dimensões. <br>
+Exemplo: grid-template-columns: 50px 100px 200px 150px. Com isso temos 4 colunas e cada uma com uma dimensão especificada.
+ <hr>
+    <strong>grid-template-rows:</strong> É a mesma coisa só que a configuração alterada é a das linhas. (alturas das células)<br>
+    <hr>
+    <strong>grid-column-gap e grid-row-gap</strong>: Está propriedade serve para os espaçamentos. Se utilizar <strong>grid-row-gap</strong> você coloca uma propriedade para Rows e Cols
+    
+    
+    </p>     
+    
+    <div id="grid_container">
+       <div class="grid-item">Item 1</div>
+       <div class="grid-item">Item 2</div>
+       <div class="grid-item">Item 3</div>
+       <div class="grid-item">Item 4</div>
+        
+       <div class="grid-item">Item 5</div>
+       <div class="grid-item">Item 6</div>
+       <div class="grid-item">Item 7</div>
+       <div class="grid-item">Item 8</div>
+        
+       <div class="grid-item">Item 9</div>
+       <div class="grid-item">Item 10</div>
+       <div class="grid-item">Item 11</div>
+       <div class="grid-item">Item 12</div>
+    </div>
+</body>
+</html>
